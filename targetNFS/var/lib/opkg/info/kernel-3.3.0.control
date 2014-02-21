@@ -1,0 +1,14 @@
+Package: kernel-3.3.0
+Version: 3.3-r53a+gitrDEV_DAVINCIPSP_03.22.00.06-arago3
+Description: linux-omapl138-psp version 3.3-r53a+gitrDEV_DAVINCIPSP_03.22.00.06-arago3
+ Linux Kernel
+Section: kernel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: omapl138_lcdk
+OE: linux-omapl138-psp
+Homepage: unknown
+Depends: kernel-image-3.3.0
+Provides: kernel-3.3.0
+Source: file://configs git://arago-project.org/git/projects/linux-davinci.git;protocol=git;branch=03.22.00.05 file://defconfig;md5sum=4d13e19566eb89d9d8b0b8169057d4dd

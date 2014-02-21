@@ -1,0 +1,13 @@
+Package: packagegroup-arago-tisdk-addons
+Version: 1.0-r9
+Description: packagegroup-arago-tisdk-addons version 1.0-r9
+ Task to install additional utilities/demos for SDKs
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: omapl138_lcdk
+OE: packagegroup-arago-tisdk-addons
+Homepage: unknown
+Depends: gdbserver, trace-cmd, dropbear, dt, nbench-byte, openssh-sftp-server
+Source: None

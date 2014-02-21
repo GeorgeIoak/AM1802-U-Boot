@@ -1,0 +1,13 @@
+Package: packagegroup-arago-tisdk-mcsdk
+Version: 1.0-r1
+Description: packagegroup-arago-tisdk-mcsdk version 1.0-r1
+ Task to install additional packages only used in the Arago SDK
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: omapl138_lcdk
+OE: packagegroup-arago-tisdk-mcsdk
+Homepage: unknown
+Depends: screenshot, mount-sdcard
+Source: None

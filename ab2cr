@@ -1,0 +1,46 @@
+./arch/arm/cpu/arm926ejs/davinci/da850_lowlevel.c:276:	writel(CONFIG_SYS_DA850_CS2CFG, &davinci_emif_regs->ab1cr);
+./arch/arm/cpu/arm926ejs/davinci/da850_lowlevel.c:279:	writel(CONFIG_SYS_DA850_CS3CFG, &davinci_emif_regs->ab2cr);
+./arch/arm/cpu/arm926ejs/davinci/dm365_lowlevel.c:378:	writel(CONFIG_SYS_DM36x_AWCCR, &davinci_emif_regs->awccr);
+./arch/arm/cpu/arm926ejs/davinci/dm365_lowlevel.c:379:	writel(CONFIG_SYS_DM36x_AB1CR, &davinci_emif_regs->ab1cr);
+./arch/arm/cpu/arm926ejs/davinci/dm365_lowlevel.c:381:	setbits_le32(&davinci_emif_regs->nandfcr, DAVINCI_NANDFCR_CS2NAND);
+./arch/arm/cpu/arm926ejs/davinci/dm365_lowlevel.c:383:	writel(CONFIG_SYS_DM36x_AB2CR, &davinci_emif_regs->ab2cr);
+./board/davinci/socius/da850evm.c:359:	       &davinci_emif_regs->ab2cr); /* CS3 */
+./board/davinci/socius/omapl138_lcdk.c:219:	       &davinci_emif_regs->ab2cr); /* CS3 */
+./board/davinci/socius/da830evm.c:249:	       &davinci_emif_regs->ab2cr);
+./board/davinci/socius/da850sdi.c:359:	       &davinci_emif_regs->ab2cr); /* CS3 */
+./board/davinci/da8xxevm/da850evm.c:359:	       &davinci_emif_regs->ab2cr); /* CS3 */
+./board/davinci/da8xxevm/omapl138_lcdk.c:219:	       &davinci_emif_regs->ab2cr); /* CS3 */
+./board/davinci/da8xxevm/da830evm.c:249:	       &davinci_emif_regs->ab2cr);
+./board/davinci/da8xxevm/da850sdi.c:359:	       &davinci_emif_regs->ab2cr); /* CS3 */
+./board/davinci/ea20/ea20.c:211:	       &davinci_emif_regs->ab1cr); /* CS2 */
+./drivers/mtd/nand/davinci_nand.c:183:	ecc = __raw_readl(&(davinci_emif_regs->nandfecc[
+./drivers/mtd/nand/davinci_nand.c:196:	val = __raw_readl(&davinci_emif_regs->nandfcr);
+./drivers/mtd/nand/davinci_nand.c:199:	__raw_writel(val, &davinci_emif_regs->nandfcr);
+./drivers/mtd/nand/davinci_nand.c:320:		val = __raw_readl(&davinci_emif_regs->nandfcr);
+./drivers/mtd/nand/davinci_nand.c:325:		__raw_writel(val, &davinci_emif_regs->nandfcr);
+./drivers/mtd/nand/davinci_nand.c:328:		val = __raw_readl(&davinci_emif_regs->nand4bitecc[0]);
+./drivers/mtd/nand/davinci_nand.c:340:		ecc[i] = __raw_readl(&davinci_emif_regs->nand4bitecc[i]) &
+./drivers/mtd/nand/davinci_nand.c:426:			&davinci_emif_regs->nand4biteccload);
+./drivers/mtd/nand/davinci_nand.c:430:			&davinci_emif_regs->nand4biteccload);
+./drivers/mtd/nand/davinci_nand.c:434:			&davinci_emif_regs->nand4biteccload);
+./drivers/mtd/nand/davinci_nand.c:438:			&davinci_emif_regs->nand4biteccload);
+./drivers/mtd/nand/davinci_nand.c:442:			&davinci_emif_regs->nand4biteccload);
+./drivers/mtd/nand/davinci_nand.c:446:			&davinci_emif_regs->nand4biteccload);
+./drivers/mtd/nand/davinci_nand.c:450:			&davinci_emif_regs->nand4biteccload);
+./drivers/mtd/nand/davinci_nand.c:454:			&davinci_emif_regs->nand4biteccload);
+./drivers/mtd/nand/davinci_nand.c:462:	val = __raw_readl(&davinci_emif_regs->nandfsr);
+./drivers/mtd/nand/davinci_nand.c:478:	val = __raw_readl(&davinci_emif_regs->nanderradd1);
+./drivers/mtd/nand/davinci_nand.c:485:			&davinci_emif_regs->nandfcr);
+./drivers/mtd/nand/davinci_nand.c:495:		val = __raw_readl(&davinci_emif_regs->nandfsr);
+./drivers/mtd/nand/davinci_nand.c:506:		val = __raw_readl(&davinci_emif_regs->nandfsr);
+./drivers/mtd/nand/davinci_nand.c:511:	iserror = __raw_readl(&davinci_emif_regs->nandfsr);
+./drivers/mtd/nand/davinci_nand.c:526:		val = __raw_readl(&davinci_emif_regs->nanderrval1);
+./drivers/mtd/nand/davinci_nand.c:529:		val = __raw_readl(&davinci_emif_regs->nanderrval1);
+./drivers/mtd/nand/davinci_nand.c:533:	numerrors = ((__raw_readl(&davinci_emif_regs->nandfsr) >> 16)
+./drivers/mtd/nand/davinci_nand.c:540:			    ((__raw_readl(&davinci_emif_regs->nanderradd2) >>
+./drivers/mtd/nand/davinci_nand.c:544:			    ((__raw_readl(&davinci_emif_regs->nanderrval2) >>
+./drivers/mtd/nand/davinci_nand.c:548:			    ((__raw_readl(&davinci_emif_regs->nanderradd1) >>
+./drivers/mtd/nand/davinci_nand.c:552:			    ((__raw_readl(&davinci_emif_regs->nanderrval1) >>
+./drivers/mtd/nand/davinci_nand.c:566:	return __raw_readl(&davinci_emif_regs->nandfsr) & 0x1;
+./drivers/mtd/nand/davinci_nand.c:599:	__raw_writel(acfg1, &davinci_emif_regs->ab1cr); /* CS2 */
+./drivers/mtd/nand/davinci_nand.c:602:	__raw_writel(0x00000101, &davinci_emif_regs->nandfcr);

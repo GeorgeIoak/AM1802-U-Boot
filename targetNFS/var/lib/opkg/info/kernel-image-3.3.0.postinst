@@ -1,0 +1,8 @@
+if [ ! -e "$D/lib/modules/3.3.0" ]; then
+	mkdir -p $D/lib/modules/3.3.0
+fi
+if [ -n "$D" ]; then
+	depmod -a -b $D -F /home/gtbldadm/ti/oe-layersetup-mcsdk/build/arago-tmp-external-arago-toolchain/sysroots/omapl138-lcdk/usr/src/kernel/System.map-3.3.0 3.3.0
+else
+	depmod -a 3.3.0
+fi
